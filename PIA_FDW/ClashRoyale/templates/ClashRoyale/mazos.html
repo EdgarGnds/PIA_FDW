@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazos</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Mazos</h1>
+        <nav>
+            <a href="{% url 'inicio' %}">Volver a Página Principal</a>
+        </nav>
+    </header>
+    <main>
+        <p>En Clash Royale, un mazo es una colección de 8 cartas que un jugador lleva a la batalla. Cada mazo debe estar cuidadosamente diseñado para equilibrar ataque, defensa y manejo del elixir. Aquí te proporciono una visión general sobre los mazos en el juego, incluyendo sus componentes y estrategias clave:</p>
+        <img src="imagenes/mazos2.png" width="500">
+
+        <article>
+            <h2>Estrategias para Construir un Mazo</h2>
+            <ul>
+                <li>Equilibrio de Coste de Elixir</li>
+                <p>Mantén un equilibrio en el coste de elixir para evitar quedarte sin recursos durante la batalla. Un mazo equilibrado suele tener cartas que van desde 2 hasta 5 de coste de elixir.
+                </p>
+                <li>Combina Tipos de Cartas</li>
+                <p>Incluye una mezcla de cartas de tropas, hechizos y estructuras para tener respuestas adecuadas a diversas situaciones. Por ejemplo, combina tropas de ataque rápido con hechizos de daño y defensas sólidas.</p>
+                <li>Defensa y Ataque</li>
+                <p>Asegúrate de tener opciones tanto para defender como para atacar. Incluye cartas que puedan manejar tanto ataques terrestres como aéreos.
+                </p>
+                <li>Sinergia entre Cartas</li>
+                <p>Busca cartas que se complementen entre sí. Por ejemplo, combina un tanque como el Gigante con cartas de daño a distancia como el Mago para formar una combinación fuerte.
+                </p>
+                <li>Adaptabilidad</li>
+                <p>Considera tener cartas que puedan adaptarse a diferentes estilos de juego y oponentes. Esto incluye cartas que pueden manejar diferentes tipos de tropas y estructuras.
+                </p>
+            </ul>
+            <hr>
+        </article>
+        <section>
+            <h2>Mazos Populares</h2>
+            <img src="https://i.ytimg.com/vi/o6fCRrS0VuE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBX7WU5lxhG8W3GxoxkbPLfJbfFtQ" alt="" width="500">
+            <ul>
+                <li>Mazo de Montapuercos 2.6</li>
+                <dl>
+                    <dt>Cartas</dt>
+                    <dd><i>Montapuercos, Mosquetera, Cañón, Esqueletos, Tronco, Espíritu de Hielo, Bola de Fuego, y Espíritus Eléctricos.</i></dd>
+                </dl>
+    
+                <li>Mazo de Sabueso de Lava con Globo</li>
+                <dl>
+                    <dt>Cartas</dt>
+                    <dd><i>Sabueso de Lava, Globo, Megaesbirro, Dragón Infernal, Máquina Voladora, Ejército de Esqueletos, Rayo, y Lápida.</i></dd>
+                </dl>
+    
+                <li>Mazo de Cementerio Control</li>
+                <dl>
+                    <dt>Cartas</dt>
+                    <dd><i>Cementerio, Gigante, Bebé Dragón, Veneno, Tornado, Mago Eléctrico, Lápida, y Bárbaros.</i>
+                    </dd>
+                </dl>
+    
+    
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Mazos Divertidos</h2>
+            <img src="https://www.mejoress.com/wp-content/uploads/2017/07/mejores-mazos-con-Clon-en-Clash-Royale.jpg" alt="" width="500">
+            <ul>
+                <li>Mazo de Clonación</li>
+                <dl>
+                    <dt>Cartas</dt>
+                    <dd><small>Sabueso de Lava, Globo, Ejército de Esqueletos, Clon, Barril de Duendes, Baby Dragón, y Máquina Voladora.</small></dd>
+                </dl>
+    
+                <li>Mazo de Puercos Reales</li>
+                <dl>
+                    <dt>Cartas</dt>
+                    <dd><small>Puercos Reales, Arquero Mágico, Recolector de Elixir, Bárbaros de Élite, Descarga, Torre Infernal, Máquina Voladora, y Tronco.</small></dd>
+                </dl>
+    
+                <li>Mazo de Cementerio Control</li>
+                <dl>
+                    <dt>Cartas</dt>
+                    <dd><small>Cementerio, Gigante, Bebé Dragón, Veneno, Tornado, Mago Eléctrico, Lápida, y Bárbaros.</small>
+                    </dd>
+                </dl>
+                
+            </ul>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Siguenos en</h3>
+            <a href="https://supr.cl/3j8f2Ai" target="_blank">Instagram</a>
+            <a href="https://supr.cl/2FyB6q2" target="_blank">Youtube</a>
+        </div>
+        <address>
+            <p>Desarrollado por Edgar Granados</p>
+            <p>Monterrey</p>
+        </address>
+    </footer>
+    
+</body>
+</html>

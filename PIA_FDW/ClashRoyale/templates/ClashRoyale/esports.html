@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-sports</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>E-sports</h1>
+        <nav>
+            <a href="{% url 'inicio' %}">Volver a Página Principal</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Competiciones y Ligas Principales</h2>
+            <img src="https://d36qemgtmze279.cloudfront.net/images/cbw7s1mh/production/c072a6cd2ca02305491c1f45ca16d5262f29c0c9-2500x1664.jpg?rect=58,0,2384,1664&w=768&h=536&q=90&auto=format" alt="" width="350">
+            <h3>Clash Royale League (CRL):</h3>
+            <p>Fue una liga profesional global creada por Supercell que reunió a los mejores equipos de Clash Royale de diferentes regiones. Aunque el formato específico de la CRL ha cambiado con el tiempo, sigue siendo un evento destacado en el calendario de eSports de Clash Royale.</p>
+            <h3>CRL World Finals:</h3>
+            <p>Es el evento culminante de la Clash Royale League donde los mejores equipos de todo el mundo compiten por el título de campeones mundiales.</p>
+            <h3>Torneos Regionales y Locales:</h3>
+            <p>Además de las competiciones globales, hay torneos regionales y locales en diferentes países y regiones que atraen a jugadores de todos los niveles.</p>
+            <hr>
+        </section>
+        <section>
+            <h2>Registro de Participantes</h2>
+            <form method="post" action="{% url 'encuesta' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Enviar</button>
+            </form>
+            
+        <hr>
+    </main>
+    <footer>
+        <p>Desarrollado por Edgar Granados</p>
+        <p>&copy; 2024 Página de eSports</p>
+    </footer>
+
+    
+</body>
+</html>

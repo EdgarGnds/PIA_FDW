@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1><span class="silver">Clash</span> <span class="gold">Royale</span></h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'cartas' %}">Cartas</a></li>
+                <li><a href="{% url 'mazos' %}">Mazos</a></li>
+                <li><a href="{% url 'clanes' %}">Clanes</a></li>
+                <li><a href="{% url 'esports' %}">E-Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Clash Royale es un videojuego de estrategia en línea para dispositivos móviles, creado por la compañía finlandesa Supercell.Fue lanzado globalmente el 2 de marzo de 2016. Clash Royale es un juego multijugador en tiempo real protagonizado por los Royales, tus personajes favoritos de Clash y mucho, mucho más. Colecciona y mejora docenas de cartas con las tropas, hechizos y defensas de Choque de clanes que conoces y amas, así como los Royales: Príncipes, Caballeros, Bebés Dragones y más. Derriba al rey y a las princesas enemigos de sus torres para derrotar a tus oponentes y ganar trofeos, coronas y gloria en la arena.</p>
+
+        <img src="https://i.ytimg.com/vi/uWsQ5IWVilM/maxresdefault.jpg" alt="batalla" width="550px" style="float: left; margin-right: 20px;">
+
+        <h2>Desarrollo</h2>
+        <p>El videojuego fue lanzado en fase beta el 4 de enero de 2016 en Canadá, Hong Kong, Australia, Suecia, Noruega, Dinamarca, Islandia, Finlandia y Nueva Zelanda y para plataformas iOS. En febrero de 2016 fue lanzado para Android en algunos países y siendo lanzado finalmente el 3 de marzo de 2016 para todo el mundo.</p>
+
+        <h2>Jugabilidad</h2>
+        <p>Clash Royale es un videojuego de tower rush que enfrenta a los jugadores en juegos con dos o cuatro jugadores (1v1 o 2v2) en los que el objetivo es destruir las torres enemigas (si es destruida la Torre del Rey se acaba la partida).  Después de tres minutos, si ambos jugadores / equipos tienen el mismo número de coronas o ninguna, el partido continúa en un período de tiempo extra de 1 minuto (más dependiendo de la arena) y el jugador que destruye una torre enemiga, gana instantáneamente. Si no se destruyen torres durante el tiempo extra, hay un desempate, donde todas las torres pierden salud rápidamente y se destruye la torre con la menor salud.</p>
+        <hr>
+
+        <h2 id="cartas">Cartas</h2>
+        <p>Las cartas en Clash Royale se dividen en tres tipos: tropas, hechizos y estructuras, y en cinco rarezas: comunes, especiales, épicas, legendarias y campeonas. Las cartas más populares incluyen al Montapuercos, Sabueso de Lava, Cementerio y Mago Eléctrico, cada una con un papel específico en el campo de batalla. Las cartas se obtienen a través de cofres, la tienda y donaciones de clanes, y son clave para desarrollar estrategias y formar mazos efectivos en el juego.</p>
+        <img src="imagenes/cartas.png" alt="" width="1200">
+        <p>Estas cartas permiten a los jugadores desarrollar estrategias únicas y adaptarse a diferentes estilos de juego. ¡Espero que esta información te ayude a entender mejor cómo funcionan las cartas en Clash Royale!</p>
+        <a href="cartas.html">Conoce más sobre las cartas aquí</a>
+        <hr>
+
+        <h2 id="mazos">Mazos</h2>
+        <p>Los mazos en Clash Royale son combinaciones de 8 cartas que los jugadores utilizan en batallas para derrotar a su oponente. Un buen mazo equilibra ataque, defensa y coste de elixir, y está adaptado al estilo de juego del jugador.</p>
+        <img src="imagenes/Captura de pantalla 2024-08-25 152039.png" width="350" style="float: left; margin-right: 20px;">
+        <h3>Coste de elixir</h3>
+        <p>Los mazos, al igual que las cartas, tienen un cierto coste de elixir que se determina con las 8 cartas que lo conforman. Por ejemplo, si todo tu mazo es de cartas de tres de elixir, tendrás un coste promedio de 3 de elixir. Este coste final es primordial tenerlo en cuenta para hacer un buen mazo. Debido a que mientras mas barato el mazo, mas fácil será ciclarlo.</p>
+        <h3>Ciclado del mazo</h3>
+        <p>El ciclado de mazo es el orden de las cartas que te aparecen al comenzar el juego. Este es totalmente aleatorio y es el único factor suerte que tendrás en una partida competitiva. </p>
+
+        <a href="mazos.html">Conoce más sobre los mazos aquí.</a>
+        <hr>
+
+        <section>
+            
+            <img src="https://support.supercell.com/images/_1640x1062_crop_center-center_90_none/CR-clanwars-hero.jpg?v=1718619157" width="550" style="float: left; margin-right: 20px;">
+
+            <h2 id="clanes">Clanes</h2>
+
+            <p>En Clash Royale, los clanes son cruciales para la experiencia del juego, ofreciendo tanto un sentido de comunidad como beneficios prácticos. Puedes crear un clan una vez que tengas al menos nivel 5, eligiendo un nombre y un escudo personalizados. Los clanes pueden ser públicos, privados o secretos, lo que define quién puede unirse y cómo se gestionan las solicitudes.
+            </p>
+
+            <p>Dentro del clan, los roles incluyen el líder, co-líderes, elders y miembros, cada uno con diferentes niveles de autoridad y responsabilidades. Los miembros pueden donar cartas y participar en guerras de clanes, que son competiciones periódicas que recompensan a los clanes según su rendimiento. Las guerras de clanes permiten ganar cofres y recompensas, mientras que el chat del clan facilita la comunicación y coordinación entre los miembros.
+            <br>
+            <br>
+            Para unirte a un clan, busca uno activo y con un buen número de miembros. Asegúrate de cumplir con los requisitos del clan y de seguir sus reglas para una experiencia óptima. La participación activa en el clan no solo te permite disfrutar de beneficios como donaciones y cofres de clan, sino que también te integra en una comunidad de jugadores con intereses similares.</p>
+
+            <a href="clanes.html">Conoce más sobre los clanes aquí.</a>
+            <hr>
+        </section>
+
+        <section>
+            
+            <img src="https://d36qemgtmze279.cloudfront.net/images/cbw7s1mh/production/8c7b46346c424c2b1a80b482417b643867098b97-2500x1667.jpg?rect=0,108,2500,1452&w=768&h=446&q=90&auto=format" alt="" width="400" style="float: left; margin-right: 20px;">
+
+            <h2 id="e-sports">E-Sports</h2>
+            <p>Los eSports de Clash Royale han evolucionado significativamente, con la Clash Royale League (CRL) como su principal competencia oficial. Desde su lanzamiento en 2018, la CRL ha pasado de ligas regionales a un formato global, donde jugadores individuales compiten en torneos mensuales para clasificarse al Campeonato Mundial. Este evento reúne a los mejores jugadores del mundo, ofreciendo grandes premios y prestigio. Equipos y jugadores destacados han ganado notoriedad, y los torneos se transmiten en vivo, atrayendo a una gran audiencia. Con su popularidad en aumento, Clash Royale sigue siendo un pilar en los eSports móviles.
+            </p>
+
+            <br>
+            <a href="esports.html">Conoce más sobre los E-Sports aquí.</a>
+            <hr>
+        </section>
+    </main>
+    <aside>
+        <h2>Haz clic en el botón para saber más sobre tu carta favorita.</h2>
+    
+        <button onclick="mostrarInformacion()">Ver carta</button>
+    
+        <h2 id="resultado"></h2>
+    
+        <script src="script.js"></script>
+        <hr>
+        <h2>JIJIJA</h2>
+        <pre>
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣛⡉⢹⢛⣛⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⡟⣫⡆⠀⣿⣷⣬⣼⡿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣷⡘⢿⣾⡿⠿⠿⠛⢃⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⠫⠶⠿⠟⣋⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⡏⠉⠏⠩⣭⣭⠉⠘⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⡇⠠⠤⠴⢯⣭⢤⠤⢄⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⠋⠀⠀⠶⠬⢼⣸⣇⢠⠬⠼⠌⠀⠀⢹⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠙⠙⠛⠉⠀⠀⠀⠀⠠⣾⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⠏⠀⢀⣮⣅⣛⠻⠇⠿⢛⣃⣩⣴⠃⠀⠈⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣧⡀⠀⠘⢿⣿⠿⠟⠻⠟⣛⠻⢿⠿⠀⠀⣼⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⢀⠀⠀⠲⠈⣭⣭⢩⣭⡴⠐⠀⠀⡌⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⠇⣾⣷⣦⣀⠀⠀⠈⠀⠀⠀⣠⣴⣿⣿⡸⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⡏⣼⣿⣿⣿⣿⣿⣶⣤⣀⣴⣿⣿⣿⣿⣿⣧⢹⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        </pre>
+        <audio controls src="imagenes/jijijija.mp3"></audio>
+        <hr>
+    </aside>
+
+    <footer>
+        <div>
+            <h3>Siguenos en</h3>
+            <a href="https://supr.cl/3j8f2Ai" target="_blank">Instagram</a>
+            <a href="https://supr.cl/2FyB6q2" target="_blank">Youtube</a>
+        </div>
+        <address>
+            <p>Desarrollado por Edgar Granados</p>
+            <p>Monterrey</p>
+        </address>
+    </footer>
+    
+</body>
+</html>

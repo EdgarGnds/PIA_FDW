@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>CARTAS</h1>
+        <nav>
+            <a href="{% url 'inicio' %}">Volver a Página Principal</a>
+        </nav>
+        <p>Las cartas en Clash Royale se dividen en tres tipos: tropas, hechizos y estructuras, y en cinco rarezas: comunes, especiales, épicas, legendarias y campeonas. Las cartas más populares incluyen al Montapuercos, Sabueso de Lava, Cementerio y Mago Eléctrico, cada una con un papel específico en el campo de batalla. Las cartas se obtienen a través de cofres, la tienda y donaciones de clanes, y son clave para desarrollar estrategias y formar mazos efectivos en el juego.</p>
+        
+    </header>
+    
+    <section>
+        <dl>
+            <h2>Cartas de Tropas</h2>
+            <video src="imagenes/cartas_tropas.mp4" controls width="500" height="300"></video>
+            <dt>Descripción: </dt>
+            <dd>Unidades que se despliegan en el campo de batalla y pueden atacar a otras tropas, estructuras o ambas.</dd>
+            <dt>Ejemplos: </dt>
+            <dd>Mosquetera: Ataca a larga distancia con su mosquete, ideal para eliminar tropas aéreas y terrestres.</dd>
+            <dd>Montapuercos: Un cerdo montado que va directamente a las torres enemigas, infligiendo daño alto.</dd>
+        </dl>
+
+        <dl>
+            <h2>Cartas de Hechizos</h2>
+            <iframe src="https://cdn.ligadegamers.com/imagenes/hechizos-daninos-de-clash-royale-0.jpg" frameborder="0"></iframe>
+            <dt>Descripción: </dt>
+            <dd>Lanzan un efecto en una área específica del campo de batalla, como daño directo o ralentización.</dd>
+            <dt>Ejemplos: </dt>
+            <dd>Bola de Fuego: Inflige daño en un área pequeña, eficaz contra tropas agrupadas y estructuras.</dd>
+            <dd>Descarga: Un hechizo rápido que aturde y daña a las tropas y estructuras en su área de efecto.</dd>
+            
+        </dl>
+
+        <dl>
+            <h2>Cartas de Estructuras</h2>
+            <img src="https://cdn.ligadegamers.com/imagenes/estructuras-activas-de-clash-royale-0.jpg" width="500">
+            <dt>Descripción: </dt>
+            <dd>Construcciones que permanecen en el campo y pueden atacar, defender o generar unidades.</dd>
+            <dt>Ejemplos: </dt>
+            <dd>Torre Infernal: Ataca con un rayo que aumenta de daño con el tiempo, eficaz contra tanques como el Golem.</dd>
+            <dd>Cañón: Defiende contra tropas terrestres, ideal para mantener la defensa económica.</dd>
+            <hr>
+    </section>
+
+    <div>
+        <h2>Rareza de las Cartas</h2>
+        <img src="https://cdn.alfabetajuega.com/alfabetajuega/2021/06/cartas-calidad.jpg" width="300">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Rareza</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Comunes</td>
+                    <td>Fácilmente disponibles y mejorables. Se obtienen en cofres básicos y son fundamentales para principiantes.</td>
+                    <td>Esqueletos, Duendes, Caballero</td>
+                </tr>
+
+                <tr>
+                    <td>Especiales</td>
+                    <td>Más raras que las comunes, requieren más esfuerzo para mejorar y desbloquear.</td>
+                    <td>Mosquetera, Mini P.E.K.K.A., Gigante</td>
+                </tr>
+
+                <tr>
+                    <td>Épicas</td>
+                    <td>Poderosas y únicas, son difíciles de obtener y mejorar.</td>
+                    <td>Globo Bombástico, Príncipe, Cazador</td>
+                </tr>
+
+                <tr>
+                    <td>Legendarias</td>
+                    <td>Muy raras y con habilidades especiales, difíciles de conseguir.</td>
+                    <td>Mago Eléctrico, Sabueso de Lava, Chispitas</td>
+                </tr>
+
+                <tr>
+                    <td>Campeones</td>
+                    <td>Introducidas en las Arenas más altas, tienen habilidades activas únicas.</td>
+                    <td>Reina Arquera, Caballero Dorado, Rey Esqueleto</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+
+    <article>
+        <h2>Las 5 Cartas mas Populares</h2>
+        <ol>
+            <li><h3>Montapuercos</h3></li>
+            <img src="https://cdns3.royaleapi.com/cdn-cgi/image/w=150,h=180,format=auto/static/img/cards/v3-2d286f92/hog-rider.png" alt="" width="100">
+            <p><strong>Descripción:</strong>Unidad cuerpo a cuerpo rápida que ataca las estructuras y puede saltar el río.</p>
+            <p><strong>Coste de Elixir:</strong>4</p>
+
+            <li><h3>Mini P.E.K.K.A</h3></li>
+            <img src="https://cdns3.royaleapi.com/cdn-cgi/image/w=150,h=180,format=auto/static/img/cards/v3-2d286f92/mini-pekka.png" alt="" width="100">
+            <p><strong>Descripción:</strong>La arena es una zona libre de mariposas. No debe haber ninguna distraccion para el P.E.K.K.A, solo destrucción.</p>
+            <p><strong>Coste de Elixir:</strong>4</p>
+
+            <li><h3>Megacaballero</h3></li>
+            <img src="https://cdns3.royaleapi.com/cdn-cgi/image/w=150,h=180,format=auto/static/img/cards/v3-2d286f92/mega-knight.png" alt="" width="100">
+            <p><strong>Descripción:</strong>Aterriza con una fuerza de tres pares de narices (y bigotes) y acaba con sus rivales saltando de uno a otro y causando un enorme daño de área. ¡Abrid paso!
+            </p>
+            <p><strong>Coste de Elixir:</strong>7</p>
+
+            <li><h3>P.E.K.K.A.</h3></li>
+            <img src="https://cdns3.royaleapi.com/cdn-cgi/image/w=150,h=180,format=auto/static/img/cards/v3-2d286f92/pekka.png" alt="" width="100">
+            <p><strong>Descripción:</strong>Una luchadora cuerpo a cuerpo pesada y lenta. Se contonea ligeramente al andar, ¡pero atiza un puñetazo que no veas!</p>
+            <p><strong>Coste de Elixir:</strong>7</p>
+
+            <li><h3>Gigante noble</h3></li>
+            <img src="https://cdns3.royaleapi.com/cdn-cgi/image/w=150,h=180,format=auto/static/img/cards/v3-2d286f92/royal-giant.png" alt="" width="100">
+            <p><strong>Descripción:</strong>Su trabajo consiste en cargarse las estructuras enemigas a cañonazo limpio. Además, tiene una barba rubia que parece sacada de un anuncio de televisión.</p>
+            <p><strong>Coste de Elixir:</strong>6</p>
+
+        </ol>
+        <hr>
+    </article>
+
+    <footer>
+        <div>
+            <h3>Siguenos en</h3>
+            <a href="https://supr.cl/3j8f2Ai" target="_blank">Instagram</a>
+            <a href="https://supr.cl/2FyB6q2" target="_blank">Youtube</a>
+        </div>
+        <address>
+            <p>Desarrollado por Edgar Granados</p>
+            <p>Monterrey</p>
+        </address>
+    </footer>
+</body>
+</html>
